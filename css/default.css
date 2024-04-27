@@ -1,13 +1,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #d0d3d4;
 }
 
 .home {
-	display: flex;
+	background-color: #d0d3d4;
 	margin: 0;
 	padding: 2rem;
+	height: 88dvh;
 }
 
 .home.column {
@@ -98,5 +98,35 @@ button.buy-now:active {
 }
 
 .services {
-    background-color: #1F2F53;
+	background-color: #1f2f53;
+	color: #f7ffff;
+}
+
+.services h1 {
+	margin-top: 0;
+	padding-top: 4rem;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 4rem;
+}
+
+.services h1 span {
+	color: #ff4742;
+}
+
+.services img {
+    height: 30rem;
+	margin: 5rem;
+}
+
+.center {
+	margin: auto;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-row {
+	flex-direction: row;
 }

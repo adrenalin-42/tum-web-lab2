@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="./css/fonts.css" />
 		<link rel="stylesheet" href="./css/default.css" />
 		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
 	<body>
 		<header class="onest-500">
@@ -31,7 +32,7 @@
 			</nav>
 		</header>
 		<main class="onest-400">
-			<div class="home">
+			<div class="home flex">
 				<div>
 					<h1>Computer Hardware <span>at the best price</span></h1>
 					<hr />
@@ -54,64 +55,165 @@
 				</div>
 				<img src="./images/home.svg" alt="" />
 			</div>
-			<div class="services">
-				<h2>Services Offered by ByteBazaar:</h2>
-
-				<ul>
-					<li>
-						<strong>Hardware Installation:</strong> Providing
-						professional installation services for computer hardware
-						components, ensuring that customers can set up their
-						systems correctly and efficiently.
-					</li>
-					<li>
-						<strong>Custom PC Building:</strong> Offering custom PC
-						building services where customers can consult with
-						experts to design and assemble bespoke computer systems
-						tailored to their specific needs and preferences.
-					</li>
-					<li>
-						<strong>Technical Support:</strong> Providing technical
-						support services to assist customers with
-						troubleshooting hardware issues, software configuration,
-						and system optimization.
-					</li>
-					<li>
-						<strong>Upgrades and Maintenance:</strong> Offering
-						upgrade services to help customers enhance the
-						performance and capabilities of their existing computer
-						systems. Additionally, providing maintenance services to
-						keep systems running smoothly and prevent hardware
-						failures.
-					</li>
-					<li>
-						<strong>Data Transfer and Backup:</strong> Assisting
-						customers with transferring data from old systems to new
-						ones and implementing backup solutions to safeguard
-						important files and documents.
-					</li>
-					<li>
-						<strong>Networking Solutions:</strong> Providing
-						networking services to help customers set up home or
-						office networks, including router configuration, Wi-Fi
-						setup, and network troubleshooting.
-					</li>
-					<li>
-						<strong>Training and Workshops:</strong> Hosting
-						training sessions and workshops to educate customers on
-						various aspects of computer hardware, software, and
-						technology trends, empowering them to make informed
-						decisions and maximize the utility of their systems.
-					</li>
-					<li>
-						<strong>Consultation Services:</strong> Offering
-						consultation services for businesses and individuals
-						seeking advice on IT infrastructure planning, hardware
-						procurement, and technology adoption strategies.
-					</li>
-				</ul>
+			<div class="services flex flex-column">
+				<h1>What <span>we offer</span></h1>
+				<hr class="center" />
+				<div class="flex flex-row">
+					<ul>
+						<li>
+							<strong>Hardware Installation:</strong> Providing
+							professional installation services for computer
+							hardware components, ensuring that customers can set
+							up their systems correctly and efficiently.
+						</li>
+						<li>
+							<strong>Custom PC Building:</strong> Offering custom
+							PC building services where customers can consult
+							with experts to design and assemble bespoke computer
+							systems tailored to their specific needs and
+							preferences.
+						</li>
+						<li>
+							<strong>Technical Support:</strong> Providing
+							technical support services to assist customers with
+							troubleshooting hardware issues, software
+							configuration, and system optimization.
+						</li>
+						<li>
+							<strong>Upgrades and Maintenance:</strong> Offering
+							upgrade services to help customers enhance the
+							performance and capabilities of their existing
+							computer systems. Additionally, providing
+							maintenance services to keep systems running
+							smoothly and prevent hardware failures.
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<strong>Data Transfer and Backup:</strong> Assisting
+							customers with transferring data from old systems to
+							new ones and implementing backup solutions to
+							safeguard important files and documents.
+						</li>
+						<li>
+							<strong>Networking Solutions:</strong> Providing
+							networking services to help customers set up home or
+							office networks, including router configuration,
+							Wi-Fi setup, and network troubleshooting.
+						</li>
+						<li>
+							<strong>Training and Workshops:</strong> Hosting
+							training sessions and workshops to educate customers
+							on various aspects of computer hardware, software,
+							and technology trends, empowering them to make
+							informed decisions and maximize the utility of their
+							systems.
+						</li>
+						<li>
+							<strong>Consultation Services:</strong> Offering
+							consultation services for businesses and individuals
+							seeking advice on IT infrastructure planning,
+							hardware procurement, and technology adoption
+							strategies.
+						</li>
+					</ul>
+					<img src="./images/services.svg" alt="" />
+				</div>
 			</div>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="footer-addr">
+				<!-- <h1 class="footer-logo">Something</h1> -->
+				<img src="./images/logo.gif" alt="ByteBazaar Logo" class="footer-logo">
+
+				<h2>Contact</h2>
+
+				<address>
+					5534 Somewhere In. The World 22193-10212<br />
+
+					<a class="footer-btn" href="mailto:example@gmail.com"
+						>Email Us</a
+					>
+				</address>
+			</div>
+
+			<ul class="footer-nav">
+				<li class="nav-item">
+					<h2 class="nav-title">Media</h2>
+
+					<ul class="nav-ul">
+						<li>
+							<a href="#">Online</a>
+						</li>
+
+						<li>
+							<a href="#">Print</a>
+						</li>
+
+						<li>
+							<a href="#">Alternative Ads</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="nav-item nav-item--extra">
+					<h2 class="nav-title">Technology</h2>
+
+					<ul class="nav-ul nav-ul--extra">
+						<li>
+							<a href="#">Hardware Design</a>
+						</li>
+
+						<li>
+							<a href="#">Software Design</a>
+						</li>
+
+						<li>
+							<a href="#">Digital Signage</a>
+						</li>
+
+						<li>
+							<a href="#">Automation</a>
+						</li>
+
+						<li>
+							<a href="#">Artificial Intelligence</a>
+						</li>
+
+						<li>
+							<a href="#">IoT</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="nav-item">
+					<h2 class="nav-title">Legal</h2>
+
+					<ul class="nav-ul">
+						<li>
+							<a href="#">Privacy Policy</a>
+						</li>
+
+						<li>
+							<a href="#">Terms of Use</a>
+						</li>
+
+						<li>
+							<a href="#">Sitemap</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div class="legal">
+				<p>&copy; 2024 Byte Bazzar. All rights reserved.</p>
+
+				<div class="legal-links">
+					<span
+						>Made with <span class="heart">♥</span> by Dumitru Moraru, FAF-212</span
+					>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>
