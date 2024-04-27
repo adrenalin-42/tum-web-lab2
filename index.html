@@ -1,371 +1,117 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<title>ByteBazaar</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="./css/default.css" />
+		<link rel="stylesheet" href="./css/nav.css" />
+	</head>
+	<body>
+		<header class="onest-500">
+			<nav>
+				<ul>
+					<li id="logo">
+						<img
+							src="./images/logo_long.png"
+							alt="ByteBazaar logo" />
+					</li>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Services</a></li>
+					<li><a href="">Products</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="onest-400">
+			<div class="home">
+				<div>
+					<h1>Computer Hardware <span>at the best price</span></h1>
+					<hr />
+					<div class="flex" id="reason-list">
+						<ul>
+							<li>Wide Selection</li>
+							<li>Quality Assurance</li>
+							<li>Competitive Pricing</li>
+							<li>Expert Advice</li>
+						</ul>
+						<ul>
+							<li>Convenience</li>
+							<li>Fast Shipping</li>
+							<li>Customer Satisfaction</li>
+							<li>Community Engagement</li>
+						</ul>
+					</div>
 
-<head>
-    <meta charset="utf-8">
-    
-    <!--====== Title ======-->
-    <title>ChefNeighbor</title>
-    
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+					<button class="buy-now">Buy now</button>
+				</div>
+				<img src="./images/home.svg" alt="" />
+			</div>
+			<div class="services">
+				<h2>Services Offered by ByteBazaar:</h2>
 
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
-        
-    <!--====== Animate CSS ======-->
-    <link rel="stylesheet" href="./css/animate.css">
-        
-    <!--====== lineicons CSS ======-->
-    <link rel="stylesheet" href="./css/lineicons.css">
-        
-    <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    
-    <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="./css/default.css">
-    
-    <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="./css/style.css">
-    
-</head>
-
-<body>
-    <!--====== HEADER PART START ======-->
-
-    <header class="header-area">
-        <div class="navbar-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="./images/logo.png" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#why">Why</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#features">Features</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#screenshots">Screenshots</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#pricing">Pricing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#download">Download</a>
-                                    </li>
-                                </ul>
-                            </div> <!-- navbar collapse -->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navbar area -->
-
-        <div id="home" class="header-hero bg_cover d-lg-flex align-items-center">
-            
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-            <div class="shape shape-6"></div>
-            
-            <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="header-hero-content">
-                            <h3 class="header-title fadeInLeftBig"><span>ChefNeighbor</span>, where Culinary Connections Flourish!</h3>
-                            <p class="text">Discover the joy of home-cooked meals delivered with a personal touch. ChefNeighbor is not just a food delivery service; it's a community of passionate home chefs ready to share their culinary creations with you. Say goodbye to generic takeout and embrace the warmth of homemade dishes crafted by your neighbors.</p>
-                            <ul class="d-flex">
-                                <li><a href="#" rel="nofollow" class="main-btn">Try Now</a></li>
-                            </ul>
-                        </div> <!-- header hero content -->
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-                        <div class="header-image">
-                            <img src="./images/burger-girl.png" alt="Girl with a burger" class="image image-shape">
-                            <!-- <div class="image-shape">
-                                <img src="./images/image-shape.svg" alt="shape">
-                            </div> -->
-                        </div> <!-- header image -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="header-shape-1"></div> <!-- header shape -->
-            <div class="header-shape-2">
-                <img src="./images/header-shape-2.svg" alt="shape">
-            </div> <!-- header shape -->
-        </div> <!-- header hero -->
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-    
-    <!--====== SERVICES PART START ======-->
-    
-    <section id="why" class="services-area pt-110 pb-120">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="section-title text-center pb-25">
-                        <h3 class="title">Why Choose ChefNeighbor?</h3>
-                        <!-- <p class="text">Alii nusquam cu duo, vim eu consulatu percipitur, meis dolor comprehensam at vis. Vel ut percipitur dignissim signiferumque.</p> -->
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-1 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-layers"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Authentic Flavors</a></h4>
-                            <p class="text">Experience a diverse array of cuisines prepared by talented home chefs who infuse their creations with authentic flavors and personal flair.</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-2 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-layout"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Community-driven</a></h4>
-                            <p class="text">We believe in the power of community. Connect with your neighbors through the joy of food, building relationships one meal at a time.</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-3 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.6s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-bolt"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Variety at Your Doorstep</a></h4>
-                            <p class="text">From comfort classics to exotic specialties. Explore new tastes without leaving the comfort of your home.</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-services services-color-4 text-center mt-30 wow fadeInUpBig" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                        <div class="services-icon d-flex align-items-center justify-content-center">
-                            <i class="lni lni-protection"></i>
-                        </div>
-                        <div class="services-content">
-                            <h4 class="services-title"><a href="#">Support Local</a></h4>
-                            <p class="text">Every order supports local home chefs, fostering a sense of camaraderie and encouraging the growth of culinary talent in your neighborhood.</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== SERVICES PART ENDS ======-->
-    
-    <!--====== ABOUT PART START ======-->
-    
-    <section id="about" class="about-area pt-70 pb-120">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-image mt-50 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="about-shape"></div>
-                        <!-- <img class="app" src="./images/about-app.png" alt="app"> -->
-                    </div> <!-- about image -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <div class="section-title">
-                            <h3 class="title">How It Works</h3>
-                            <ol class="text">
-                                <li>Browse Menus: Explore a variety of mouthwatering dishes crafted by our talented ChefNeighbors. From appetizers to desserts, the options are endless.</li>
-                                <li>Place Your Order: Select your desired dishes, and place your order seamlessly through our user-friendly platform.</li>
-                                <li>Connect with Your ChefNeighbor: Get to know the person behind the apron. Communicate directly with your ChefNeighbor for special requests or dietary preferences.</li>
-                                <li>Enjoy Delivery: Relax as your freshly prepared meal is delivered to your doorstep. Savor the unique flavors of a homemade culinary experience.</li>
-                            </ol>
-
-                        </div> <!-- section title -->
-                    </div> <!-- about content -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== ABOUT PART ENDS ======-->
-    
-    
-    <!--====== DOWNLOAD PART START ======-->
-    
-    <section id="download" class="download-area pt-70 pb-40">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-9">
-                    <div class="download-image mt-50 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                        <!-- <img class="image" src="./images/download-app.png" alt="download"> -->
-                        
-                        <div class="download-shape-1"></div>
-                        <div class="download-shape-2">
-                            <img class="svg" src="./images/download-shape.svg" alt="shape">
-                        </div>
-                    </div> <!-- download image -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="download-content mt-45 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                        <h3 class="download-title">Join ChefNeighbor today!</h3>
-                        <p class="text">Embark on a culinary journey that goes beyond food delivery—it's about building a stronger, more connected community through the joy of sharing delicious meals. Welcome to a world where every bite tells a story!</p>
-                        <!-- <ul>
-                            <li><a class="app-store" href="#"><img src="./images/app-store.png" alt="store"></a></li>
-                            <li><a class="play-store" href="#"><img src="./images/play-store.png" alt="store"></a></li>
-                        </ul> -->
-                    </div> <!-- download image -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-    
-    <!--====== DOWNLOAD PART ENDS ======-->
-    
-    <!--====== PART START ======-->
-    
-    <footer id="footer" class="footer-area">
-        
-        <div class="footer-shape shape-1"></div>
-        <div class="footer-shape shape-2"></div>
-        <div class="footer-shape shape-3"></div>
-        <div class="footer-shape shape-4"></div>
-        <div class="footer-shape shape-5"></div>
-        <div class="footer-shape shape-6"></div>
-        <div class="footer-shape shape-7"></div>
-        <div class="footer-shape shape-8">
-            <img class="svg" src="./images/footer-shape.svg" alt="Shape">
-        </div>
-        
-        <div class="footer-widget pt-30 pb-80">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="footer-about mt-50 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.2s">
-                            <a class="logo" href="#" >
-                                <img src="./images/logo.png" alt="Logo">
-                            </a>
-                            <p class="text">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sederfs diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
-                            <ul class="social">
-                                <li><a href="#"><i class="lni lni-facebook"></i></a></li>
-                                <li><a href="#"><i class="lni lni-twitter"></i></a></li>
-                                <li><a href="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><i class="lni lni-linkedin"></i></a></li>
-                            </ul>
-                        </div> <!-- footer about -->
-                    </div> 
-                    <div class="col-lg-5 col-md-6">
-                        <div class="footer-link d-flex flex-wrap">
-                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.4s">
-                                <div class="footer-title">
-                                    <h4 class="title">Quick Links</h4>
-                                </div>
-                                <ul class="link">
-                                    <li><a class="" href="#">Home</a></li>
-                                    <li><a class="" href="#">Features</a></li>
-                                    <li><a class="" href="#">Testimonial</a></li>
-                                    <li><a class="" href="#">Pricing</a></li>
-                                    <li><a class="" href="#">Contact</a></li>
-                                </ul>
-                            </div> <!-- footer link wrapper -->
-                            
-                            <div class="footer-link-wrapper mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.6s">
-                                <div class="footer-title">
-                                    <h4 class="title">Support</h4>
-                                </div>
-                                <ul class="link">
-                                    <li><a class="" href="#">FAQ</a></li>
-                                    <li><a class="" href="#">Privacy Policy</a></li>
-                                    <li><a class="" href="#">Terms Of Use</a></li>
-                                    <li><a class="" href="#">Legal</a></li>
-                                    <li><a class="" href="#">Site Map</a></li>
-                                </ul>
-                            </div> <!-- footer link wrapper -->
-                        </div> <!-- footer link -->
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-contact mt-45 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.8s">
-                            <div class="footer-title">
-                                <h4 class="title">Quick Link</h4>
-                            </div>
-                            <ul class="contact-list">
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-phone"></i> +37360815438</p>
-                                        </div>
-                                    </div> <!-- contact info -->
-                                </li>
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><a href="#"><i class="lni lni-envelope"></i> info@chefneighbor.com</a></p>
-                                        </div>
-                                    </div> <!-- contact info -->
-                                </li>
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><a href="#"><i class="lni lni-world"></i> www.yourweb.com</a></p>
-                                        </div>
-                                    </div> <!-- contact info -->
-                                </li>
-                                <li>
-                                    <div class="contact-info d-flex">
-                                        <div class="info-content media-body">
-                                            <p class="text"><i class="lni lni-map"></i>Aboba City, Illinois, United States Of America 750.</p>
-                                        </div>
-                                    </div> <!-- contact info -->
-                                </li>
-                            </ul> <!-- contact list -->
-                        </div> <!-- footer contact -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-    </footer>
-    
-    <!--====== PART ENDS ======-->
-    
-    <!--====== BACK TOP TOP PART START ======-->
-
-    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
-
-    <!--====== BACK TOP TOP PART ENDS ======-->
-    
-    <!--====== PART START ======-->
-    
-<!--
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-"></div> 
-            </div>
-        </div>
-    </section>
--->
-    
-    <!--====== PART ENDS ======-->
-    
-</body>
-
+				<ul>
+					<li>
+						<strong>Hardware Installation:</strong> Providing
+						professional installation services for computer hardware
+						components, ensuring that customers can set up their
+						systems correctly and efficiently.
+					</li>
+					<li>
+						<strong>Custom PC Building:</strong> Offering custom PC
+						building services where customers can consult with
+						experts to design and assemble bespoke computer systems
+						tailored to their specific needs and preferences.
+					</li>
+					<li>
+						<strong>Technical Support:</strong> Providing technical
+						support services to assist customers with
+						troubleshooting hardware issues, software configuration,
+						and system optimization.
+					</li>
+					<li>
+						<strong>Upgrades and Maintenance:</strong> Offering
+						upgrade services to help customers enhance the
+						performance and capabilities of their existing computer
+						systems. Additionally, providing maintenance services to
+						keep systems running smoothly and prevent hardware
+						failures.
+					</li>
+					<li>
+						<strong>Data Transfer and Backup:</strong> Assisting
+						customers with transferring data from old systems to new
+						ones and implementing backup solutions to safeguard
+						important files and documents.
+					</li>
+					<li>
+						<strong>Networking Solutions:</strong> Providing
+						networking services to help customers set up home or
+						office networks, including router configuration, Wi-Fi
+						setup, and network troubleshooting.
+					</li>
+					<li>
+						<strong>Training and Workshops:</strong> Hosting
+						training sessions and workshops to educate customers on
+						various aspects of computer hardware, software, and
+						technology trends, empowering them to make informed
+						decisions and maximize the utility of their systems.
+					</li>
+					<li>
+						<strong>Consultation Services:</strong> Offering
+						consultation services for businesses and individuals
+						seeking advice on IT infrastructure planning, hardware
+						procurement, and technology adoption strategies.
+					</li>
+				</ul>
+			</div>
+		</main>
+		<footer></footer>
+	</body>
 </html>

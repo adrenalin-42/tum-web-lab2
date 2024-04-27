@@ -1,0 +1,58 @@
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #1A1C1E;
+    display: flex;
+}
+
+nav li a {
+    display: block;
+	color: white;
+	text-align: center;
+	padding: 1rem 1rem;
+	text-decoration: none;
+}
+
+nav li#logo {
+    /* float: left; */
+    margin-right: auto;
+    object-fit: cover;
+}
+
+#logo img {
+    object-fit: cover;
+    /* padding: 0; */
+    /* margin: 0; */
+    
+    height: 3rem;
+    width: 9rem;
+}
+
+/* Change the link color to #7c878e on hover */
+nav li a:hover {
+	color: #A5A5B1;
+}
+
+/* Border dividers */
+
+/* nav li {
+	border-left: 1px solid #bbb;
+    
+}
+
+nav li:first-child {
+	border-left: none;
+}
+
+nav ul {
+} */
+
+/* Fixed top */
+
+header {
+    position:sticky;
+    top: 0;
+    width: 100%;
+  }
