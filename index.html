@@ -7,12 +7,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan:ital@0;1&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="./css/fonts.css" />
 		<link rel="stylesheet" href="./css/default.css" />
 		<link rel="stylesheet" href="./css/nav.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/stars.css" />
 	</head>
 	<body>
 		<header class="onest-500">
@@ -23,20 +24,19 @@
 							src="./images/logo_long.png"
 							alt="ByteBazaar logo" />
 					</li>
-					<li><a href="">Home</a></li>
-					<li><a href="">About Us</a></li>
-					<li><a href="">Services</a></li>
-					<li><a href="">Products</a></li>
-					<li><a href="">Contact Us</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#pricing">Pricing</a></li>
+					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main class="onest-400">
-			<div class="home flex">
+			<div class="home flex" id="home">
 				<div>
 					<h1>Computer Hardware <span>at the best price</span></h1>
 					<hr />
-					<div class="flex" id="reason-list">
+					<div class="flex onest-700" id="reason-list">
 						<ul>
 							<li>Wide Selection</li>
 							<li>Quality Assurance</li>
@@ -51,87 +51,288 @@
 						</ul>
 					</div>
 
-					<button class="buy-now">Buy now</button>
+					<button class="buy-now" onclick="location.href='#contact'">Buy now</button>
 				</div>
 				<img src="./images/home.svg" alt="" />
 			</div>
-			<div class="services flex flex-column">
+			<div class="services flex flex-column" id="services">
 				<h1>What <span>we offer</span></h1>
-				<hr class="center" />
+				<hr />
+
 				<div class="flex flex-row">
-					<ul>
-						<li>
-							<strong>Hardware Installation:</strong> Providing
-							professional installation services for computer
-							hardware components, ensuring that customers can set
-							up their systems correctly and efficiently.
-						</li>
-						<li>
-							<strong>Custom PC Building:</strong> Offering custom
-							PC building services where customers can consult
-							with experts to design and assemble bespoke computer
-							systems tailored to their specific needs and
-							preferences.
-						</li>
-						<li>
-							<strong>Technical Support:</strong> Providing
-							technical support services to assist customers with
-							troubleshooting hardware issues, software
-							configuration, and system optimization.
-						</li>
-						<li>
-							<strong>Upgrades and Maintenance:</strong> Offering
-							upgrade services to help customers enhance the
-							performance and capabilities of their existing
-							computer systems. Additionally, providing
-							maintenance services to keep systems running
-							smoothly and prevent hardware failures.
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<strong>Data Transfer and Backup:</strong> Assisting
-							customers with transferring data from old systems to
-							new ones and implementing backup solutions to
-							safeguard important files and documents.
-						</li>
-						<li>
-							<strong>Networking Solutions:</strong> Providing
-							networking services to help customers set up home or
-							office networks, including router configuration,
-							Wi-Fi setup, and network troubleshooting.
-						</li>
-						<li>
-							<strong>Training and Workshops:</strong> Hosting
-							training sessions and workshops to educate customers
-							on various aspects of computer hardware, software,
-							and technology trends, empowering them to make
-							informed decisions and maximize the utility of their
-							systems.
-						</li>
-						<li>
-							<strong>Consultation Services:</strong> Offering
-							consultation services for businesses and individuals
-							seeking advice on IT infrastructure planning,
-							hardware procurement, and technology adoption
-							strategies.
-						</li>
-					</ul>
 					<img src="./images/services.svg" alt="" />
+					<ul>
+						<li>
+							<h2>Hardware Installation</h2>
+							<p>
+								Providing professional installation services for
+								computer hardware components, ensuring that
+								customers can set up their systems correctly and
+								efficiently.
+							</p>
+						</li>
+						<li>
+							<h2>Custom PC Building</h2>
+							<p>
+								Offering custom PC building services where
+								customers can consult with experts to design and
+								assemble bespoke computer systems tailored to
+								their specific needs and preferences.
+							</p>
+						</li>
+						<li>
+							<h2>Technical Support</h2>
+							<p>
+								Providing technical support services to assist
+								customers with troubleshooting hardware issues,
+								software configuration, and system optimization.
+							</p>
+						</li>
+						<li>
+							<h2>Upgrades and Maintenance</h2>
+							<p>
+								Offering upgrade services to help customers
+								enhance the performance and capabilities of
+								their existing computer systems. Additionally,
+								providing maintenance services to keep systems
+								running smoothly and prevent hardware failures.
+							</p>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h2>Data Transfer and Backup</h2>
+							<p>
+								Assisting customers with transferring data from
+								old systems to new ones and implementing backup
+								solutions to safeguard important files and
+								documents.
+							</p>
+						</li>
+						<li>
+							<h2>Networking Solutions</h2>
+							<p>
+								Providing networking services to help customers
+								set up home or office networks, including router
+								configuration, Wi-Fi setup, and network
+								troubleshooting.
+							</p>
+						</li>
+						<li>
+							<h2>Training and Workshops</h2>
+							<p>
+								Hosting training sessions and workshops to
+								educate customers on various aspects of computer
+								hardware, software, and technology trends,
+								empowering them to make informed decisions and
+								maximize the utility of their systems.
+							</p>
+						</li>
+						<li>
+							<h2>Consultation Services</h2>
+							<p>
+								Offering consultation services for businesses
+								and individuals seeking advice on IT
+								infrastructure planning, hardware procurement,
+								and technology adoption strategies.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="pricing" id="pricing">
+				<h1>Our Products</h1>
+				<hr class="center" id="top-hr" />
+				<div class="grid">
+					<div class="grid-item">
+						<img
+							src="./images/hardware1.png"
+							width="300px"
+							alt="" />
+						<h2>AMD Ryzen 7 7700</h2>
+						<p class="description">
+							Ryzen 7 7000 Series 8-Core 3.8 GHz Socket AM5 65W
+							AMD Radeon Graphics Processor
+						</p>
+						<div
+							class="Stars"
+							style="--rating: 4.6"
+							aria-label="Rating of this product is 4.6 out of 5."></div>
+						<hr />
+						<h3>Key Specs</h3>
+						<ol>
+							<li>5nm 65W</li>
+							<li>32MB L3 Cache</li>
+							<li>8MB L2 Cache</li>
+							<li>AMD Radeon Graphics</li>
+						</ol>
+						<hr />
+						<p class="price">Price is <span>$291.29</span></p>
+						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+					</div>
+					<div class="grid-item">
+						<img
+							src="./images/hardware2.png"
+							width="300px"
+							alt="" />
+						<h2>ASUS ROG Strix GeForce RTX 4090</h2>
+						<p class="description">
+							White OC Edition Gaming Graphics Card (PCIe 4.0,
+							24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)
+						</p>
+						<div
+							class="Stars"
+							style="--rating: 4.4"
+							aria-label="Rating of this product is 4.4 out of 5."></div>
+						<hr />
+						<h3>Key Specs</h3>
+						<ol>
+							<li>
+								NVIDIA Ada Lovelace Streaming Multiprocessors:
+								Up to 2x performance and power efficiency
+							</li>
+							<li>
+								4th Generation Tensor Cores: Up to 2X AI
+								performance
+							</li>
+							<li>
+								3rd Generation RT Cores: Up to 2X ray tracing
+								performance
+							</li>
+							<li>
+								Axial-tech fans scaled up for 23% more airflow
+							</li>
+						</ol>
+						<hr />
+						<p class="price">Price is <span>$2099.99</span></p>
+						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+					</div>
+					<div class="grid-item">
+						<img
+							src="./images/hardware3.png"
+							width="300px"
+							alt="" />
+						<h2>Intel Core i9-14900K</h2>
+						<p class="description">
+							Core i9 14th Gen 24-Core (8P+16E) LGA 1700 125W
+							Intel UHD Graphics 770 Desktop Processor
+						</p>
+						<div
+							class="Stars"
+							style="--rating: 4.3"
+							aria-label="Rating of this product is 4.3 out of 5."></div>
+						<hr />
+						<h3>Key Specs</h3>
+						<ol>
+							<li>
+								24 cores (8 P-cores + 16 E-cores) and 32
+								threads. Integrated Intel® UHD Graphics 770
+								included
+							</li>
+							<li>
+								Performance hybrid architecture integrates two
+								core microarchitectures, prioritizing and
+								distributing workloads to optimize performance
+							</li>
+							<li>Up to 6.0 GHz unlocked. 36MB Cache</li>
+							<li>
+								Compatible with Intel 600-series (with potential
+								BIOS update) and 700-series chipset-based
+								motherboards
+							</li>
+						</ol>
+						<hr />
+						<p class="price">Price is <span>$580.99</span></p>
+						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+					</div>
+					<div class="grid-item">
+						<img
+							src="./images/hardware4.png"
+							width="300px"
+							alt="" />
+						<h2>G.SKILL Trident Z5 RGB Series 64GB (2 x 32GB)</h2>
+						<p class="description">
+							288-Pin PC RAM DDR5 6400 (PC5 51200) Desktop Memory
+						</p>
+						<div
+							class="Stars"
+							style="--rating: 4.4"
+							aria-label="Rating of this product is 4.4 out of 5."></div>
+						<hr />
+						<h3>Key Specs</h3>
+						<ol>
+							<li>DDR5 6400 (PC5 51200)</li>
+							<li>Timing 32-39-39-102</li>
+							<li>CAS Latency 32</li>
+							<li>Voltage 1.40V</li>
+						</ol>
+						<hr />
+						<p class="price">Price is <span>$212.99</span></p>
+						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+					</div>
+					<div class="grid-item">
+						<img
+							src="./images/hardware5.png"
+							width="300px"
+							alt="" />
+						<h2>GIGABYTE B550 AORUS ELITE AX V2</h2>
+						<p class="description">AM4 AMD B550 ATX Motherboard with Dual M.2, SATA 6Gb/s, USB 3.2 Gen 2, 2.4/5 GHz Dual-Band, 2.5 GbE LAN, PCIe 4.0</p>
+						<div
+							class="Stars"
+							style="--rating: 4.2"
+							aria-label="Rating of this product is 4.2 out of 5."></div>
+						<hr />
+						<h3>Key Specs</h3>
+						<ol>
+							<li>Support for Ryzen 5000 Series with BIOS UPDATE</li>
+							<li>Supports AMD Ryzen 5000 Series / 3rd Gen Ryzen and 3rd Gen Ryzen with Radeon Graphics Processors</li>
+							<li>Dual Channel ECC/Non-ECC Unbuffered DDR4, 4 DIMMs</li>
+							<li>12+2 Phases Digital Twin Power Design with 50A DrMOS</li>
+						</ol>
+						<hr />
+						<p class="price">Price is <span>$129.99</span></p>
+						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+					</div>
+					<div class="grid-item">
+						<img
+							src="./images/hardware6.png"
+							width="300px"
+							alt="" />
+						<h2>CORSAIR RM1000e</h2>
+						<p class="description">Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency</p>
+						<div
+							class="Stars"
+							style="--rating: 4.6"
+							aria-label="Rating of this product is 4.6 out of 5."></div>
+						<hr />
+						<h3>Key Specs</h3>
+						<ol>
+							<li>ATX</li>
+							<li>Full Modular</li>
+							<li>80 PLUS GOLD Certified</li>
+							<li>100 - 240 V 47 - 63 Hz</li>
+						</ol>
+						<hr />
+						<p class="price">Price is <span>$139.99</span></p>
+						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+					</div>
 				</div>
 			</div>
 		</main>
-		<footer>
+		<footer id="contact">
 			<div class="footer-addr">
 				<!-- <h1 class="footer-logo">Something</h1> -->
-				<img src="./images/logo.gif" alt="ByteBazaar Logo" class="footer-logo">
+				<img
+					src="./images/logo.gif"
+					alt="ByteBazaar Logo"
+					class="footer-logo" />
 
-				<h2>Contact</h2>
+				<h2>Contact Location</h2>
 
 				<address>
-					5534 Somewhere In. The World 22193-10212<br />
+					5534 Somewhere In. The World 6514<br />
 
-					<a class="footer-btn" href="mailto:example@gmail.com"
+					<a class="footer-btn" href="mailto:dumitru.moraru@isa.utm.md"
 						>Email Us</a
 					>
 				</address>
@@ -139,24 +340,27 @@
 
 			<ul class="footer-nav">
 				<li class="nav-item">
-					<h2 class="nav-title">Media</h2>
+					<h2 class="nav-title">Navigation</h2>
 
 					<ul class="nav-ul">
 						<li>
-							<a href="#">Online</a>
+							<a href="#home">Home</a>
 						</li>
 
 						<li>
-							<a href="#">Print</a>
+							<a href="#services">Services</a>
 						</li>
 
 						<li>
-							<a href="#">Alternative Ads</a>
+							<a href="#pricing">Pricing</a>
+						</li>
+						<li>
+							<a href="#contact">Contact Us</a>
 						</li>
 					</ul>
 				</li>
 
-				<li class="nav-item nav-item--extra">
+				<!-- <li class="nav-item nav-item--extra">
 					<h2 class="nav-title">Technology</h2>
 
 					<ul class="nav-ul nav-ul--extra">
@@ -184,9 +388,9 @@
 							<a href="#">IoT</a>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 
-				<li class="nav-item">
+				<!-- <li class="nav-item">
 					<h2 class="nav-title">Legal</h2>
 
 					<ul class="nav-ul">
@@ -202,7 +406,7 @@
 							<a href="#">Sitemap</a>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>
 
 			<div class="legal">
@@ -210,7 +414,8 @@
 
 				<div class="legal-links">
 					<span
-						>Made with <span class="heart">♥</span> by Dumitru Moraru, FAF-212</span
+						>Made with <span class="heart">♥</span> by Dumitru
+						Moraru, FAF-212</span
 					>
 				</div>
 			</div>

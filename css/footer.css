@@ -39,8 +39,8 @@ footer > * {
 
 .footer-logo {
 	height: 8rem;
-    width: 24rem;
-    object-fit: cover;
+	width: 24rem;
+	object-fit: cover;
 }
 
 .footer-addr h2 {
@@ -120,27 +120,22 @@ footer a {
 .heart {
 	color: #2f2f2f;
 }
-
-@media screen and (min-width: 24.375em) {
-	.legal .legal-links {
-		margin-left: auto;
-	}
+.legal .legal-links {
+	margin-left: auto;
 }
 
-@media screen and (min-width: 40.375em) {
-	.footer-nav > * {
-		flex: 1;
-	}
+.footer-nav > * {
+	flex: 1;
+}
 
-	.nav-item--extra {
-		flex-grow: 2;
-	}
+.nav-item--extra {
+	flex-grow: 2;
+}
 
-	.footer-addr {
-		flex: 1 0px;
-	}
+.footer-addr {
+	flex: 1 0px;
+}
 
-	.footer-nav {
-		flex: 2 0px;
-	}
+.footer-nav {
+	flex: 2 0px;
 }

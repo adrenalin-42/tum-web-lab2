@@ -7,7 +7,7 @@ body {
 	background-color: #d0d3d4;
 	margin: 0;
 	padding: 2rem;
-	height: 88dvh;
+	height: 95dvh;
 }
 
 .home.column {
@@ -34,6 +34,16 @@ hr {
 	margin-left: 2rem;
 }
 
+.services hr {
+	border: 1px solid gray;
+	border-radius: 5px;
+	width: 40%;
+	/* margin-top: 0;
+	margin-bottom: 0; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .flex {
 	display: flex;
 }
@@ -57,7 +67,7 @@ hr {
 
 /* Font size */
 #reason-list {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 /* CSS */
@@ -100,6 +110,8 @@ button.buy-now:active {
 .services {
 	background-color: #1f2f53;
 	color: #f7ffff;
+    height: 100dvh;
+	padding: 2rem;
 }
 
 .services h1 {
@@ -115,12 +127,13 @@ button.buy-now:active {
 }
 
 .services img {
-    height: 30rem;
+    height: 25rem;
 	margin: 5rem;
 }
 
 .center {
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .flex-column {
@@ -129,4 +142,92 @@ button.buy-now:active {
 
 .flex-row {
 	flex-direction: row;
+}
+
+.services h2 {
+	color: #86cbdc;
+	font-size: 2rem;
+	margin-bottom: 0.25rem;
+}
+
+.services .flex p {
+	/* padding: 0; */
+	margin-top: 0;
+}
+
+.pricing {
+	background-color: #d0d3d4;
+	color: black;
+    /* height: 100dvh; */
+	padding: 2rem;
+}
+
+.grid {
+	display: grid;
+	/* grid-template-columns: auto auto auto auto; */
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 5rem;
+	/* grid-template-rows: 2fr 1fr; */
+	row-gap: 2.5rem;
+	justify-content: space-evenly;
+
+}
+
+.grid-item {
+	/* grid-column: 1 / 5; */
+	padding: 1rem 5rem;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px rgb(107, 76, 158);
+	background-color: #b2bbf0;
+}
+
+.grid-item hr {
+	width: 100%;
+	margin: 0.5rem auto;
+}
+
+.pricing h2 {
+	font-size: 2rem;
+	margin-top: 0.5rem;
+}
+
+p.description {
+	padding: auto;
+	margin: 0.5rem auto;
+}
+
+.pricing h3 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+.pricing ol {
+	margin-top: 0;
+}
+
+p.price {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.price span {
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+button.buy-item {
+	font-size: 2rem;
+	line-height: 1rem;
+	width: 100%;
+}
+
+.pricing h1 {
+	color: #343434;
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 5rem;
+}
+
+hr#top-hr {
+	margin: auto auto 2rem auto;
 }
