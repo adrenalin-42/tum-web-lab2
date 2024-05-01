@@ -1,16 +1,6 @@
-body {
-	margin: 0;
-	padding: 0;
-}
-
 .home {
 	background-color: #d0d3d4;
-	margin: 0;
 	padding: 2rem;
-	height: 95dvh;
-}
-
-.home.column {
 }
 
 .home h1 {
@@ -20,11 +10,6 @@ body {
 
 .home h1 span {
 	color: #86cbdc;
-}
-
-.home img {
-	height: 35rem;
-	margin: 5rem;
 }
 
 hr {
@@ -50,10 +35,6 @@ hr {
 
 /* Code for that little icon approval */
 
-#reason-list ul li {
-	list-style: none;
-}
-
 #reason-list ul li::before {
 	content: "";
 	display: inline-block;
@@ -63,11 +44,6 @@ hr {
 	background-size: contain;
 	background-repeat: no-repeat;
 	margin: 0 0.5em -0.25em -1em;
-}
-
-/* Font size */
-#reason-list {
-	font-size: 2rem;
 }
 
 /* CSS */
@@ -110,8 +86,6 @@ button.buy-now:active {
 .services {
 	background-color: #1f2f53;
 	color: #f7ffff;
-    height: 100dvh;
-	padding: 2rem;
 }
 
 .services h1 {
@@ -126,9 +100,14 @@ button.buy-now:active {
 	color: #ff4742;
 }
 
+#special {
+	/* flex-wrap: wrap; */
+	flex-flow: column wrap;
+}
+
 .services img {
-    height: 25rem;
-	margin: 5rem;
+	height: 25rem;
+	margin: 2.5rem;
 }
 
 .center {
@@ -158,27 +137,7 @@ button.buy-now:active {
 .pricing {
 	background-color: #d0d3d4;
 	color: black;
-    /* height: 100dvh; */
-	padding: 2rem;
-}
-
-.grid {
-	display: grid;
-	/* grid-template-columns: auto auto auto auto; */
-	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 5rem;
-	/* grid-template-rows: 2fr 1fr; */
-	row-gap: 2.5rem;
-	justify-content: space-evenly;
-
-}
-
-.grid-item {
-	/* grid-column: 1 / 5; */
-	padding: 1rem 5rem;
-	border-radius: 5px;
-	box-shadow: 5px 5px 10px rgb(107, 76, 158);
-	background-color: #b2bbf0;
+	/* height: 100dvh; */
 }
 
 .grid-item hr {
@@ -230,4 +189,148 @@ button.buy-item {
 
 hr#top-hr {
 	margin: auto auto 2rem auto;
+}
+
+/* BREAKPOINTS FOR RESPONSIVE DESIGN */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	main {
+		overflow-x: hidden !important;
+		max-width: 100%;
+	}
+
+	button.buy-now {
+		/* margin: auto 2rem; */
+	}
+
+	.home {
+		padding: 1rem;
+		flex-direction: column;
+		height: max-content;
+	}
+
+	.home h1 {
+		font-size: 3.5rem;
+	}
+
+	/* Font size */
+	#reason-list {
+		font-size: 1.5rem;
+		flex-direction: column;
+		/* display: flex; */
+		/* margin: 2rem; */
+	}
+	.home img {
+		height: 15rem;
+		margin: 2rem;
+	}
+
+	hr {
+		width: 90%;
+		margin: 1rem auto;
+	}
+
+	#home-buy-now-button {
+		/* margin: 5rem auto; */
+		display: flex;
+		/* justify-content: center; */
+		/* align-items: center; */
+		margin: 2rem auto;
+		font-size: 3rem;
+		line-height: 2rem;
+	}
+
+	.services {
+		height: max-content;
+		/* padding: 1rem; */
+	}
+
+	.grid {
+		display: grid;
+		/* grid-template-columns: auto auto auto auto; */
+		grid-template-columns: 1fr;
+		column-gap: 5rem;
+		/* grid-template-rows: 2fr 1fr; */
+		row-gap: 2.5rem;
+		justify-content: space-evenly;
+	}
+
+	.grid-item {
+		/* grid-column: 1 / 5; */
+		padding: 1rem 1rem;
+		border-radius: 5px;
+		box-shadow: 5px 5px 10px rgb(107, 76, 158);
+		background-color: #b2bbf0;
+	}
+
+	.pricing {
+		padding: 1rem;
+	}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.home img {
+		height: 35rem;
+		margin: 5rem auto;
+	}
+
+	#reason-list { 
+		font-size: 2rem;
+	}
+
+	.home {
+		height: min-content;
+
+	}
+
+	#home-buy-now-button {
+		/* margin: 5rem auto; */
+		display: flex;
+		/* justify-content: center; */
+		/* align-items: center; */
+		margin: 5rem auto;
+		font-size: 5rem;
+		line-height: 5rem;
+
+	}
+
+	.services {
+		height: 100dvh;
+		padding: 2rem;
+	}
+
+	.grid {
+		display: grid;
+		/* grid-template-columns: auto auto auto auto; */
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 5rem;
+		/* grid-template-rows: 2fr 1fr; */
+		row-gap: 2.5rem;
+		justify-content: space-evenly;
+	}
+
+	.grid-item {
+		/* grid-column: 1 / 5; */
+		padding: 1rem 5rem;
+		border-radius: 5px;
+		box-shadow: 5px 5px 10px rgb(107, 76, 158);
+		background-color: #b2bbf0;
+	}
+
+	.pricing {
+		padding: 2rem;
+	}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.home {
+		height: max-content;
+
+	}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

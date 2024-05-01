@@ -1,58 +1,152 @@
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #1A1C1E;
-    display: flex;
-}
-
-nav li a {
-    display: block;
-	color: white;
-	text-align: center;
-	padding: 1rem 1rem;
+a {
 	text-decoration: none;
 }
 
-nav li#logo {
-    /* float: left; */
-    margin-right: auto;
-    object-fit: cover;
+li {
+	list-style: none;
 }
 
-#logo img {
-    object-fit: cover;
-    /* padding: 0; */
-    /* margin: 0; */
-    
-    height: 3rem;
-    width: 9rem;
+img#logo {
+	object-fit: cover;
+	/* padding: 0; */
+	/* margin: 0; */
+
+	height: 3rem;
+	width: 9rem;
 }
 
 /* Change the link color to #7c878e on hover */
 nav li a:hover {
-	color: #A5A5B1;
+	color: #a5a5b1;
 }
 
-/* Border dividers */
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #1a1c1e;
+}
 
-/* nav li {
-	border-left: 1px solid #bbb;
+/* RESPONSIVE NAVBAR MENU STARTS */
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+	display: none;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+	display: none;
+	font-size: 24px;
+	user-select: none;
+}
+
+/* NAVBAR MENU */
+.menu {
+	display: flex;
+	gap: 1em;
+	font-size: 18px;
+}
+
+.menu li:hover {
+	background-color: #4c9e9e;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+
+.menu li {
+	padding: 5px 14px;
+}
+
+/* BREAKPOINTS FOR RESPONSIVE DESIGN */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+	nav li#logo {
+		/* float: left; */
+		margin-right: auto;
+		object-fit: cover;
+	}
+
+	nav ul {
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+
+		display: flex;
+	}
+	nav li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 1rem 1rem;
+		text-decoration: none;
+	}
+
+    .menu {
+        display:none;
+        position: absolute;
+        background-color:teal;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+      }
     
+      .menu li:hover {
+        display: inline-block;
+        background-color:#4c9e9e;
+        transition: 0.3s ease;
+      }
+    
+      .menu li + li {
+        margin-top: 12px;
+      }
+    
+      input[type=checkbox]:checked ~ .menu {
+        display: block;
+      }
+    
+      .hamburger {
+        display: block;
+      }
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) {
+	nav li#logo {
+		/* float: left; */
+		margin-right: auto;
+		object-fit: cover;
+	}
 
-nav li:first-child {
-	border-left: none;
+	nav ul {
+		list-style-type: none;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+
+		display: flex;
+	}
+	nav li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 1rem 1rem;
+		text-decoration: none;
+	}
+
+    nav {
+        overflow: hidden;
+    }
 }
-
-nav ul {
-} */
-
-/* Fixed top */
-
-header {
-    position:sticky;
-    top: 0;
-    width: 100%;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

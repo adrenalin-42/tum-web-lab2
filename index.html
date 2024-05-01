@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>ByteBazaar</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,22 +19,27 @@
 	<body>
 		<header class="onest-500">
 			<nav>
-				<ul>
-					<li id="logo">
-						<img
-							src="./images/logo_long.png"
-							alt="ByteBazaar logo" />
-					</li>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#pricing">Pricing</a></li>
-					<li><a href="#contact">Contact Us</a></li>
+				<img
+					src="./images/logo_long.png"
+					alt="ByteBazaar logo"
+					id="logo" />
+				<ul class="nav-links">
+					<!-- USING CHECKBOX HACK -->
+					<input type="checkbox" id="checkbox_toggle" />
+					<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+					<!-- NAVIGATION MENUS -->
+					<div class="menu">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</div>
 				</ul>
 			</nav>
 		</header>
 		<main class="onest-400">
 			<div class="home flex" id="home">
-				<div>
+				<div class="flex-column">
 					<h1>Computer Hardware <span>at the best price</span></h1>
 					<hr />
 					<div class="flex onest-700" id="reason-list">
@@ -51,16 +56,22 @@
 							<li>Community Engagement</li>
 						</ul>
 					</div>
-
-					<button class="buy-now" onclick="location.href='#contact'">Buy now</button>
+					<button class="buy-now" onclick="location.href='#contact'" id="home-buy-now-button">
+						Buy now
+					</button>
 				</div>
-				<img src="./images/home.svg" alt="" />
+				<div class="flex-column">
+					<img src="./images/home.svg" alt="" />
+				</div>
+				
+				
+				
 			</div>
-			<div class="services flex flex-column" id="services">
+			<div class="services" id="services">
 				<h1>What <span>we offer</span></h1>
 				<hr />
 
-				<div class="flex flex-row">
+				<div class="flex" id="special">
 					<img src="./images/services.svg" alt="" />
 					<ul>
 						<li>
@@ -169,7 +180,11 @@
 						</ol>
 						<hr />
 						<p class="price">Price is <span>$291.29</span></p>
-						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+						<button
+							class="buy-now buy-item"
+							onclick="location.href='#contact'">
+							Buy now
+						</button>
 					</div>
 					<div class="grid-item">
 						<img
@@ -206,7 +221,11 @@
 						</ol>
 						<hr />
 						<p class="price">Price is <span>$2099.99</span></p>
-						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+						<button
+							class="buy-now buy-item"
+							onclick="location.href='#contact'">
+							Buy now
+						</button>
 					</div>
 					<div class="grid-item">
 						<img
@@ -244,7 +263,11 @@
 						</ol>
 						<hr />
 						<p class="price">Price is <span>$580.99</span></p>
-						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+						<button
+							class="buy-now buy-item"
+							onclick="location.href='#contact'">
+							Buy now
+						</button>
 					</div>
 					<div class="grid-item">
 						<img
@@ -269,7 +292,11 @@
 						</ol>
 						<hr />
 						<p class="price">Price is <span>$212.99</span></p>
-						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+						<button
+							class="buy-now buy-item"
+							onclick="location.href='#contact'">
+							Buy now
+						</button>
 					</div>
 					<div class="grid-item">
 						<img
@@ -277,7 +304,11 @@
 							width="300px"
 							alt="" />
 						<h2>GIGABYTE B550 AORUS ELITE AX V2</h2>
-						<p class="description">AM4 AMD B550 ATX Motherboard with Dual M.2, SATA 6Gb/s, USB 3.2 Gen 2, 2.4/5 GHz Dual-Band, 2.5 GbE LAN, PCIe 4.0</p>
+						<p class="description">
+							AM4 AMD B550 ATX Motherboard with Dual M.2, SATA
+							6Gb/s, USB 3.2 Gen 2, 2.4/5 GHz Dual-Band, 2.5 GbE
+							LAN, PCIe 4.0
+						</p>
 						<div
 							class="Stars"
 							style="--rating: 4.2"
@@ -285,14 +316,30 @@
 						<hr />
 						<h3>Key Specs</h3>
 						<ol>
-							<li>Support for Ryzen 5000 Series with BIOS UPDATE</li>
-							<li>Supports AMD Ryzen 5000 Series / 3rd Gen Ryzen and 3rd Gen Ryzen with Radeon Graphics Processors</li>
-							<li>Dual Channel ECC/Non-ECC Unbuffered DDR4, 4 DIMMs</li>
-							<li>12+2 Phases Digital Twin Power Design with 50A DrMOS</li>
+							<li>
+								Support for Ryzen 5000 Series with BIOS UPDATE
+							</li>
+							<li>
+								Supports AMD Ryzen 5000 Series / 3rd Gen Ryzen
+								and 3rd Gen Ryzen with Radeon Graphics
+								Processors
+							</li>
+							<li>
+								Dual Channel ECC/Non-ECC Unbuffered DDR4, 4
+								DIMMs
+							</li>
+							<li>
+								12+2 Phases Digital Twin Power Design with 50A
+								DrMOS
+							</li>
 						</ol>
 						<hr />
 						<p class="price">Price is <span>$129.99</span></p>
-						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+						<button
+							class="buy-now buy-item"
+							onclick="location.href='#contact'">
+							Buy now
+						</button>
 					</div>
 					<div class="grid-item">
 						<img
@@ -300,7 +347,11 @@
 							width="300px"
 							alt="" />
 						<h2>CORSAIR RM1000e</h2>
-						<p class="description">Fully Modular Low-Noise ATX Power Supply - ATX 3.0 & PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80 PLUS Gold Efficiency</p>
+						<p class="description">
+							Fully Modular Low-Noise ATX Power Supply - ATX 3.0 &
+							PCIe 5.0 Compliant - 105°C-Rated Capacitors - 80
+							PLUS Gold Efficiency
+						</p>
 						<div
 							class="Stars"
 							style="--rating: 4.6"
@@ -315,7 +366,11 @@
 						</ol>
 						<hr />
 						<p class="price">Price is <span>$139.99</span></p>
-						<button class="buy-now buy-item" onclick="location.href='#contact'">Buy now</button>
+						<button
+							class="buy-now buy-item"
+							onclick="location.href='#contact'">
+							Buy now
+						</button>
 					</div>
 				</div>
 			</div>
@@ -333,7 +388,9 @@
 				<address>
 					5534 Somewhere In. The World 6514<br />
 
-					<a class="footer-btn" href="mailto:dumitru.moraru@isa.utm.md"
+					<a
+						class="footer-btn"
+						href="mailto:dumitru.moraru@isa.utm.md"
 						>Email Us</a
 					>
 				</address>
