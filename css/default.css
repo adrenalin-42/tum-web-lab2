@@ -106,16 +106,6 @@ button.buy-now:active {
 	color: #ff4742;
 }
 
-#special {
-	/* flex-wrap: wrap; */
-	flex-flow: column wrap;
-}
-
-.services img {
-	height: 25rem;
-	margin: 2.5rem;
-}
-
 .center {
 	margin-left: auto;
 	margin-right: auto;
@@ -127,17 +117,6 @@ button.buy-now:active {
 
 .flex-row {
 	flex-direction: row;
-}
-
-.services h2 {
-	color: #86cbdc;
-	font-size: 2rem;
-	margin-bottom: 0.25rem;
-}
-
-.services .flex p {
-	/* padding: 0; */
-	margin-top: 0;
 }
 
 .pricing {
@@ -223,8 +202,9 @@ hr#top-hr {
 	}
 
 	.home img {
+		display: block;
 		height: 15rem;
-		margin: 2rem;
+		margin: 2rem auto;
 	}
 
 	hr {
@@ -242,10 +222,35 @@ hr#top-hr {
 		line-height: 2rem;
 	}
 
-	.services {
-		height: max-content;
-		/* padding: 1rem; */
+	.services hr {
+		margin-bottom: 0;
 	}
+	
+	.services img {
+		display: block;
+		width: 25rem;
+		/* height: 15rem; */
+		padding: 0;
+		margin: 1rem auto;
+	}
+
+	.services-text {
+		margin: 2rem;
+	}
+
+	.services-text h2 {
+		color: #86cbdc;
+		font-size: 1.5rem;
+		margin-bottom: 0.25rem;
+		margin-top: 2rem;
+	}
+	
+	.services-text p {
+		/* margin-top: 0; */
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
 
 	.grid {
 		display: grid;
@@ -282,6 +287,12 @@ hr#top-hr {
 		margin-left: 2rem;
 	}
 
+	.home img {
+		display: block;
+		width: 25rem;
+		margin: 2rem auto;
+	}
+
 	#reason-list ul {
 		font-size: 2rem;
 		padding: 1rem 3rem;
@@ -298,26 +309,60 @@ hr#top-hr {
 		font-size: 5rem;
 		line-height: 3rem;
 	}
+
+	.services img {
+		display: block;
+		width: 30rem;
+		/* height: 15rem; */
+		padding: 0;
+		margin: 1rem auto;
+	}
+
+	.services hr {
+		margin-bottom: 0;
+	}
+	
+	.services img {
+		display: block;
+		width: 25rem;
+		/* height: 15rem; */
+		padding: 0;
+		margin: 1rem auto;
+	}
+
+	.services-text {
+		padding: 2rem;
+	}
+
+	.services-text h2 {
+		color: #86cbdc;
+		font-size: 1.5rem;
+		margin-bottom: 0.25rem;
+		margin-top: 2rem;
+	}
+	
+	.services-text p {
+		/* margin-top: 0; */
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.home {
-		height: min-content;
+		height: max-content;
 	}
 
-	#home-buy-now-button {
-		/* margin: 5rem auto; */
-		display: flex;
-		/* justify-content: center; */
-		/* align-items: center; */
+
+	.home img {
+		/* height: 25rem; */
+		width: 25rem;
 		margin: 5rem auto;
-		font-size: 5rem;
-		line-height: 5rem;
 	}
 
-	.services {
-		height: 100dvh;
-		padding: 2rem;
+	.services img {
+		width: 35rem;
+		/* height: 15rem; */
 	}
 
 	.grid {
@@ -353,17 +398,15 @@ hr#top-hr {
 		/* padding: 2rem; */
 	}
 
-	.home img {
-		/* height: 25rem; */
-		width: 25rem;
-		margin: 5rem auto;
-	}
+	
 
 	.home {
 		/* height: max-content; */
 		display: flex;
 		flex-direction: row;
 	}
+
+	
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -382,5 +425,37 @@ hr#top-hr {
 		/* height: 25rem; */
 		width: 35rem;
 		margin: 5rem auto;
+	}
+
+	.services img {
+		/* display: block; */
+		width: 40rem;
+		/* height: 15rem; */
+		margin: 5rem;
+	}
+
+	.services-text h2 {
+		color: #86cbdc;
+		font-size: 2rem;
+		margin-bottom: 0.25rem;
+	}
+	
+	.services-text p {
+		/* padding: 0; */
+		margin-top: 0.5rem;
+		padding: 0;
+	}
+
+	.services-text {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.services-text {
+		display: flex;
+	}
+
+	.services-content {
+		display: flex;
 	}
 }
