@@ -1,0 +1,25 @@
+.mascot {
+	position: fixed;
+	bottom: 1rem;
+	right: -10rem;
+
+    /* background-color: red; */
+	animation-name: appearOnPage appearOnPage;
+    animation-delay: 5s;
+	animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+.mascot img {
+	width: 10rem;
+}
+
+@keyframes appearOnPage {
+	0% {
+        right: -10rem;
+
+	}
+    100% {
+        right: 2rem;
+    }
+}
