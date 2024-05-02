@@ -2,17 +2,37 @@
 	position: fixed;
 	bottom: 1rem;
 	right: -10rem;
-
     /* background-color: red; */
-	animation-name: appearOnPage appearOnPage;
-    animation-delay: 5s;
-	animation-duration: 4s;
+	animation-name: appearOnPage, catRotate;
+    animation-delay: 5s, 7s;
+	animation-duration: 4s, 3s;
     animation-fill-mode: forwards;
 }
-
 .mascot img {
-	width: 10rem;
+    width: 10rem;
 }
+
+.hide {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.mascot:hover + .hide{
+    position: fixed;
+	right: 2rem;
+	bottom: 11rem;
+    display:block;
+    /* visibility: visible; */
+    background-color: rgb(211, 138, 211);
+    padding: 0.5rem;
+    border-radius: 10px;
+
+
+
+
+    /* color: aqua; */
+}
+
 
 @keyframes appearOnPage {
 	0% {
@@ -21,5 +41,26 @@
 	}
     100% {
         right: 2rem;
+
+    }
+}
+
+@keyframes catSay {
+	0% {
+        opacity: 0%;
+
+	}
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes catRotate {
+	0% {
+        transform: rotate(0deg);
+
+	}
+    100% {
+        transform: rotate(360deg);
     }
 }
