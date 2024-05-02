@@ -1,3 +1,9 @@
+main,
+footer {
+	max-width: 100%;
+	overflow-x: hidden !important;
+}
+
 .home {
 	background-color: #d0d3d4;
 	padding: 2rem;
@@ -194,17 +200,12 @@ hr#top-hr {
 /* BREAKPOINTS FOR RESPONSIVE DESIGN */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-	main {
-		overflow-x: hidden !important;
-		max-width: 100%;
-	}
-
 	button.buy-now {
 		/* margin: auto 2rem; */
 	}
 
 	.home {
-		padding: 1rem;
+		padding: 2rem;
 		flex-direction: column;
 		height: max-content;
 	}
@@ -213,13 +214,14 @@ hr#top-hr {
 		font-size: 3.5rem;
 	}
 
-	/* Font size */
-	#reason-list {
+	#reason-list ul {
 		font-size: 1.5rem;
-		flex-direction: column;
+		padding: 1rem 3rem;
+		/* flex-direction: column; */
+
 		/* display: flex; */
-		/* margin: 2rem; */
 	}
+
 	.home img {
 		height: 15rem;
 		margin: 2rem;
@@ -269,21 +271,38 @@ hr#top-hr {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+	.home {
+		padding: 1rem;
+		flex-direction: column;
+		height: max-content;
+	}
+
+	.home h1 {
+		margin-top: 2rem;
+		margin-left: 2rem;
+	}
+
+	#reason-list ul {
+		font-size: 2rem;
+		padding: 1rem 3rem;
+		/* flex-direction: column; */
+
+		/* display: flex; */
+	}
+	#home-buy-now-button {
+		/* margin: 5rem auto; */
+		display: flex;
+		/* justify-content: center; */
+		/* align-items: center; */
+		margin: 2rem auto;
+		font-size: 5rem;
+		line-height: 3rem;
+	}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	.home img {
-		height: 35rem;
-		margin: 5rem auto;
-	}
-
-	#reason-list { 
-		font-size: 2rem;
-	}
-
 	.home {
 		height: min-content;
-
 	}
 
 	#home-buy-now-button {
@@ -294,7 +313,6 @@ hr#top-hr {
 		margin: 5rem auto;
 		font-size: 5rem;
 		line-height: 5rem;
-
 	}
 
 	.services {
@@ -326,11 +344,43 @@ hr#top-hr {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-	.home {
-		height: max-content;
+	#reason-list ul {
+		font-size: 2rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+		/* gap: 1rem; */
+		/* padding: 2rem; */
+	}
 
+	.home img {
+		/* height: 25rem; */
+		width: 25rem;
+		margin: 5rem auto;
+	}
+
+	.home {
+		/* height: max-content; */
+		display: flex;
+		flex-direction: row;
 	}
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+	.home {
+		height: 91dvh;
+	}
+
+	#reason-list ul {
+		font-size: 2.5rem;
+		column-gap: 1rem;
+		/* gap: 1rem; */
+		/* padding: 2rem; */
+	}
+
+	.home img {
+		/* height: 25rem; */
+		width: 35rem;
+		margin: 5rem auto;
+	}
 }

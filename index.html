@@ -11,8 +11,8 @@
 			rel="stylesheet" />
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/fonts.css" />
-		<link rel="stylesheet" href="./css/default.css" />
 		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/default.css" />
 		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="stylesheet" href="./css/stars.css" />
 	</head>
@@ -26,7 +26,9 @@
 				<ul class="nav-links">
 					<!-- USING CHECKBOX HACK -->
 					<input type="checkbox" id="checkbox_toggle" />
-					<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+					<label for="checkbox_toggle" class="hamburger"
+						>&#9776;</label
+					>
 					<!-- NAVIGATION MENUS -->
 					<div class="menu">
 						<li><a href="#home">Home</a></li>
@@ -38,34 +40,30 @@
 			</nav>
 		</header>
 		<main class="onest-400">
-			<div class="home flex" id="home">
-				<div class="flex-column">
+			<div class="home" id="home">
+				<div class="home-content">
 					<h1>Computer Hardware <span>at the best price</span></h1>
 					<hr />
-					<div class="flex onest-700" id="reason-list">
+					<div class="onest-700" id="reason-list">
 						<ul>
 							<li>Wide Selection</li>
 							<li>Quality Assurance</li>
 							<li>Competitive Pricing</li>
 							<li>Expert Advice</li>
-						</ul>
-						<ul>
 							<li>Convenience</li>
 							<li>Fast Shipping</li>
 							<li>Customer Satisfaction</li>
 							<li>Community Engagement</li>
 						</ul>
 					</div>
-					<button class="buy-now" onclick="location.href='#contact'" id="home-buy-now-button">
+					<button
+						class="buy-now"
+						onclick="location.href='#contact'"
+						id="home-buy-now-button">
 						Buy now
 					</button>
 				</div>
-				<div class="flex-column">
-					<img src="./images/home.svg" alt="" />
-				</div>
-				
-				
-				
+				<img src="./images/home.svg" alt="" />
 			</div>
 			<div class="services" id="services">
 				<h1>What <span>we offer</span></h1>
