@@ -235,7 +235,7 @@ hr#top-hr {
 	}
 
 	.services-text {
-		margin: 2rem;
+		padding: 2rem;
 	}
 
 	.services-text h2 {
@@ -266,6 +266,8 @@ hr#top-hr {
 		/* grid-column: 1 / 5; */
 		padding: 1rem 1rem;
 		border-radius: 5px;
+		max-width: 35rem;
+
 		box-shadow: 5px 5px 10px rgb(107, 76, 158);
 		background-color: #b2bbf0;
 	}
@@ -346,6 +348,36 @@ hr#top-hr {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
+
+	.grid {
+		display: grid;
+		/* grid-template-columns: auto auto auto auto; */
+		grid-template-columns: 1fr;
+		column-gap: 5rem;
+		/* grid-template-rows: 2fr 1fr; */
+		/* row-gap: 2.5rem; */
+		justify-content: space-evenly;
+	}
+	
+	.grid-item {
+		/* grid-column: 1 / 5; */
+		/* width: 35rem; */
+		margin: 1rem auto;
+		max-width: 40rem;
+		padding: 1rem 1rem;
+		border-radius: 5px;
+		box-shadow: 5px 5px 10px rgb(107, 76, 158);
+		background-color: #b2bbf0;
+	}
+
+	.grid-item img {
+		display: block;
+		margin: auto;
+	}
+
+	.pricing {
+		padding: 1rem;
+	}
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -368,23 +400,26 @@ hr#top-hr {
 	.grid {
 		display: grid;
 		/* grid-template-columns: auto auto auto auto; */
-		grid-template-columns: 1fr 1fr 1fr;
-		column-gap: 5rem;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
 		/* grid-template-rows: 2fr 1fr; */
-		row-gap: 2.5rem;
+		row-gap: 0rem;
 		justify-content: space-evenly;
 	}
 
 	.grid-item {
 		/* grid-column: 1 / 5; */
-		padding: 1rem 5rem;
+		/* width: 35rem; */
+		/* margin: auto; */
+		/* max-height: 30rem; */
+		padding: 1rem 1rem;
 		border-radius: 5px;
 		box-shadow: 5px 5px 10px rgb(107, 76, 158);
 		background-color: #b2bbf0;
 	}
 
 	.pricing {
-		padding: 2rem;
+		padding: 1rem;
 	}
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -393,7 +428,8 @@ hr#top-hr {
 		font-size: 2rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		column-gap: 2rem;
+		column-gap: 1.5rem;
+		row-gap: 1rem;
 		/* gap: 1rem; */
 		/* padding: 2rem; */
 	}
@@ -406,7 +442,27 @@ hr#top-hr {
 		flex-direction: row;
 	}
 
-	
+	.grid {
+		display: grid;
+		/* grid-template-columns: auto auto auto auto; */
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+		/* grid-template-rows: 2fr 1fr; */
+		row-gap: 0rem;
+		justify-content: space-evenly;
+	}
+
+	.grid-item {
+		/* grid-column: 1 / 5; */
+		/* width: 35rem; */
+		/* margin: auto; */
+		/* max-height: 30rem; */
+		max-width: 50rem;
+		padding: 1rem 1rem;
+		border-radius: 5px;
+		box-shadow: 5px 5px 10px rgb(107, 76, 158);
+		background-color: #b2bbf0;
+	}
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -457,5 +513,22 @@ hr#top-hr {
 
 	.services-content {
 		display: flex;
+	}
+
+	.grid {
+		display: grid;
+		/* grid-template-columns: auto auto auto auto; */
+		grid-template-columns: 1fr 1fr 1fr;
+		column-gap: 2.5rem;
+		/* grid-template-rows: 2fr 1fr; */
+		row-gap: 2rem;
+		justify-content: space-evenly;
+	}
+
+	.grid-item {
+		padding: 1rem 1rem;
+		border-radius: 5px;
+		box-shadow: 5px 5px 10px rgb(107, 76, 158);
+		background-color: #b2bbf0;
 	}
 }
